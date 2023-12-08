@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"],
+      "@navigators/*": ["./src/navigators/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@jotaiStore": ["./src/jotaiStore"],
+      "@jotaiStore/*": ["./src/jotaiStore/*"],
+      "@svgs": ["./assets/svgs"],
+      "@assets": ["./assets"],
+      "@assets/*": ["./assets/*"],
+      "@/*": ["./src/*"]
+    },
+    "forceConsistentCasingInFileNames": true
+  }
+}
